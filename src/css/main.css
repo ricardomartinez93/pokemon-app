@@ -1,0 +1,164 @@
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.eot');
+    src: url('../src/fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../src/fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../src/fonts/Poppins-Regular.woff') format('woff'),
+        url('../src/fonts/Poppins-Regular.ttf') format('truetype'),
+        url('../src/fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #515050;
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --header-color: #5ea7aa;
+    --black-color: #000;
+    --background-color:#effefe;
+}
+
+
+
+header{
+    background-color: var(--header-color);
+    padding: 20px;
+}
+
+main{
+    background-color: var(--background-color); 
+    padding-top: 50px;
+}
+
+.header__title{
+    color: #fff;
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.header__form{
+    text-align: center;
+}
+
+.header__form__label{
+    color: #fff;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.header__form__input{
+    background-color: #6aabaa;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 14px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 18px;
+    padding: 2px 14px;
+    width: 100px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.form__error,
+.form__success{
+    color: #ff0b0b;
+    display: block;
+    font-size: 18px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.form__success{
+    color: green;
+    display: none;
+}
+
+.form__btn-save{
+    background-color: var(--background-color); 
+    border-radius: 50px;
+    display: block;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto 40px;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+#list-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.pokemon__item{
+    border-radius: 10px;
+    border:2px solid #e5ebeb;
+    cursor: pointer;
+    margin: 0 3px 15px 3px;
+    max-width: 115px;;
+    width: 40%;
+}
+
+.pokemon__item--checked{
+    background-color: #fef8f0;
+    border:2px solid var(--black-color);
+}
+
+.pokemon__item__checkbox{
+    position: absolute;
+    opacity: 0;
+}
+
+.pokemon__item__name{
+    color: var(--black-color);
+    font-size: 14px;
+    margin: 4px 10px 0 10px;
+}
+
+.pokemon__item__image{
+    display: block;
+    margin: auto;
+}
+
+@media screen and (min-width: 380px){
+
+    .pokemon__item{
+        margin: 0 5px 25px 5px;
+        width: 115px;
+    }
+
+}
+
+@media screen and (min-width: 600px){
+    .header__title{
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+}

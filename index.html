@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Checklist</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="header__title">Pokémon Checklist</h1>
+      <form class="header__form">
+        <label class="header__form__label">Nickname:</label>
+        <input class="header__form__input" name="nickname" type="text" maxlength="60">
+      </form>
+    </header>
+    <main>
+      <span class="form__success">Su registro se guardo correctamente.</span>
+      <span class="form__error"></span>
+      <button class="form__btn-save">Registrar</button>
+      <section id="list-pokemon"></section>
+    </main>
+    <footer>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
